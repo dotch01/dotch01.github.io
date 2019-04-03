@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+﻿jQuery(document).ready(function($){
 
     //fix for stupid ie object cover
     if (document.documentMode || /Edge/.test(navigator.userAgent)) {
