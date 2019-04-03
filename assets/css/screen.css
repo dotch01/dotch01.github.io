@@ -4,6 +4,7 @@ Copyright: Sal, WowThemes.net, https://www.wowthemes.net
 License: https://www.wowthemes.net/freebies-license/ 
 */
 .mainheading {
+    text-align: center;
     padding: 1rem 0rem;
 }
 
@@ -895,3 +896,4 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
