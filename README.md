@@ -1,6 +1,6 @@
 # 我的部落格
 
-[Live Demo](https://dotch01.github.io/) &nbsp;
+[進入首頁](https://dotch01.github.io/) &nbsp;
 
 
 ### 版權
