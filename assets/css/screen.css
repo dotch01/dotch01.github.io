@@ -897,3 +897,23 @@ iframe {
     transition: opacity .25s;
 }
 
+/* 我新增的CSS */
+
+body {
+    -moz-user-select : none;
+    -webkit-user-select: none;
+}
+.postimg img{
+    box-shadow:3px 3px 12px gray;
+    transition: all 0.5s ease 0s;
+    display:block;
+    margin: 24px auto;
+}
+
+.postimg img:hover{
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
