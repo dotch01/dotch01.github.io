@@ -1,4 +1,4 @@
-/*! lazyload - v2.1.1 - 2018-04-01
+﻿/*! lazyload - v2.1.1 - 2018-04-01
  * https://github.com/13twelve/lazyload
  * Copyright (c) 2018
  * License: MIT
