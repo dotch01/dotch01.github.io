@@ -31,13 +31,13 @@ github就像一個非常好用的雲端硬碟，除了儲存檔案之外他還�
 
 這裡我們需要給部落格一個存在雲端上管理的空間，進入github官網登入後在右上角點選Your respository 
 
-<div class="postimg"><img src="{{site.baseurlmy}}/assets/images/gp07.png"></div>
+<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp07.png"></div>
 
 接著不要管其它的東西按下一個大大的綠色按鈕 New 
 
 到如圖的新增介面後記住 **Repository name一定要是 帳號名.github.io** 後面的設定基本上不需要更動直接按下 Create repository
 
-<div class="postimg"><img src="{{site.baseurlmy}}/assets/images/gp08.png"></div>
+<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp08.png"></div>
 
 
 #### Install tools
@@ -52,7 +52,7 @@ github就像一個非常好用的雲端硬碟，除了儲存檔案之外他還�
 
 安裝完成並開啟它後，你如果想要換成中文介面的話就如圖所示去左邊選擇擴充套件搜尋我框起來的中文語言包名稱後點選下載(英文應該是install)並重新啟動VScode後應該就會是中文介面囉。
 
-<div class="postimg"><img src="{{site.baseurlmy}}/assets/images/gp09.png"></div>
+<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp09.png"></div>
 
 
 - 安裝 github desktop
@@ -94,13 +94,13 @@ ridk inatall
 這個jekyll模板分享網站<a href="https://jekyllthemes.io/" target="_blank">jekyllthemes<a>有各式各樣的模板提供下載，但注意**會有需要付費的模板**
 
 在你查看模板的途中會看到這兩個按鈕
-<div class="postimg"><img src="{{site.baseurlmy}}/assets/images/gp10.png"></div>
+<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp10.png"></div>
 
 
 點下Get Forty可以進入到github頁面下載作者所分享的模板，Live demo則是可以進去看看模板大致上的呈現效果
 
 進入到github頁面後，照著圖中的做就可以把整個模板下載下來
-<div class="postimg"><img src="{{site.baseurlmy}}/assets/images/gp11.png"></div>
+<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp11.png"></div>
 
 假如你選好了中意的模板就先抓下來吧
 
@@ -196,26 +196,26 @@ bundle exec jekyll server
 
 按下桌面那有個~~不知道是什麼生物的~~白色剪影的紫色圈圈
 你會看到這個畫面
-<div class="postimg"><img src="{{site.baseurlmy}}/assets/images/gp01.png"></div>
+<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp01.png"></div>
 
 照著圈起處選擇後，就會要你登入，如果你有先在網頁登入github，這裡應該會是這樣
-<div class="postimg"><img src="{{site.baseurlmy}}/assets/images/gp02.png"></div>
+<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp02.png"></div>
 
 Email記得改成你註冊帳號的Email，輸入完就直接按下Continue吧！
 
 登入後它會要你選擇要複製到本地的專案，這邊當然是選擇你一開始創建好的 用戶名.github.io
-<div class="postimg"><img src="{{site.baseurlmy}}/assets/images/gp03.png"></div>
+<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp03.png"></div>
 
 選擇完畢後就直接按下Clone
 
 接著會看到這個畫面
-<div class="postimg"><img src="{{site.baseurlmy}}/assets/images/gp04.png"></div>
+<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp04.png"></div>
 
 更改一下Local path選擇本地路徑( **建議也是在C槽路徑越短越好** )後再按下Clone進到下一步
 
 
 看到這個畫面就表示你的本地路徑已經可以跟雲端上的資源庫接通了
-<div class="postimg"><img src="{{site.baseurlmy}}/assets/images/gp05.png"></div>
+<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp05.png"></div>
 
 再解釋那些區塊是什麼作用之前
 我們先回到之前下載模板的資料夾根目錄，並把裡面的檔案全部複製起來貼到你剛剛設定的本地路徑
@@ -236,7 +236,7 @@ Email記得改成你註冊帳號的Email，輸入完就直接按下Continue吧�
 首先開啟VScode選擇左上角檔案>開啟資料夾，選擇你在上一個步驟設定的本地路徑
 
 下圖的這幾個圈起來的部分，這是用我使用的模板做示範，所以僅供參考
-<div class="postimg"><img src="{{site.baseurlmy}}/assets/images/gp06.png"></div>
+<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp06.png"></div>
 
 posts資料夾基本上就是你貼文檔案要放的位置， **X-X-X-文章名稱** X的內容建議是跟著照年月日打，沒意外它是會顯示在你貼文上的日期，而最後的文章名稱記得 **千萬不要打中文** 不然99%機率會讓你的網站在測試階段就壞掉。
 
