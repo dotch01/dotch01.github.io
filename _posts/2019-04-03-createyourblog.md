@@ -35,9 +35,9 @@ github就像一個非常好用的雲端硬碟，除了儲存檔案之外他還�
 
 接著不要管其它的東西按下那個大大的綠色按鈕` New `
 
-到如圖的新增介面後記住 **Repository name一定要是 帳號名.github.io** 後面的設定基本上不需要更動直接按下 Create repository
+到如圖的新增介面後記住 **Repository name一定要是 帳號名.github.io** 後面的設定基本上不需要更動直接按下`Create repository`
 
-<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp08.png"></div>
+<div class="postimg"><img src="https://live.staticflickr.com/7901/47489004382_a54d99bc2e.jpg" width="500" height="354" alt="gp08"></div>
 
 
 #### Install tools
@@ -52,19 +52,19 @@ github就像一個非常好用的雲端硬碟，除了儲存檔案之外他還�
 
 安裝完成並開啟它後，你如果想要換成中文介面的話就如圖所示去左邊選擇擴充套件搜尋我框起來的中文語言包名稱後點選下載(英文應該是install)並重新啟動VScode後應該就會是中文介面囉。
 
-<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp09.png"></div>
+<div class="postimg"><img src="https://live.staticflickr.com/7840/46626378705_834900951f.jpg" width="329" height="500" alt="gp09"></div>
 
 
 - 安裝 github desktop
 
 
-後期發布網站的階段它會非常有用，我們先<a href="https://desktop.github.com/" target="_blank">下載<a>並安裝起來吧，放心後面會再提到它的。
+後期發布網站的階段它會非常有用，我們先<a href="https://desktop.github.com/" target="_blank">下載<a>並安裝起來吧，後面會再提到它的。
 
 
 - 安裝Ruby
 
 
-jekyll是由Ruby開發的部落格網站生產器，只要安裝它就能有各式各樣的免費模板供你使用，首先讓我們從安裝Ruby開始吧
+簡單的說因為jekyll是由Ruby開發的部落格網站生產器(套件)，只要使用Ruby安裝它就能有各式各樣的免費模板供你使用，首先讓我們從安裝Ruby開始吧
 因為個人使用的是win10環境，接下來就只說明win10的部分
 
 Ruby在windows上的安裝方法似乎跟Mac、Linux不一樣，可以使用RubyInstallers直接安裝
@@ -72,8 +72,7 @@ Ruby在windows上的安裝方法似乎跟Mac、Linux不一樣，可以使用Ruby
 
 然後正常情況下你就會看到一個~~疑似木馬程式~~黑色框框，大概是Ruby自己寫的一個終端機，別擔心，它只是要安裝一些額外的東西就按下Enter給它安裝就對了
 
-就算沒看到也沒關係，找到你的C槽路徑 Users\"你的使用者名稱"\AppData\Roaming\Microsoft\
-Windows\StartMenu\Programs\Ruby 2.6.1-1-x64下會有一個 Start Command Prompt with Ruby 這個東東會很常用到建議你把它釘選在工作列，在找不到就按下Ctrl+F貼上名字用搜尋大法直接暴力搜就好。
+就算沒看到也沒關係，找到你的C槽路徑`Users\"你的使用者名稱"\AppData\Roaming\Microsoft\Windows\StartMenu\Programs\Ruby 2.6.1-1-x64`下會有一個`Start Command Prompt with Ruby`這個東東會很常用到建議你把它釘選在工作列，在找不到就按下Ctrl+F貼上名字用搜尋大法直接暴力搜就好。
 
 開啟之後直接輸入
 ```sh
@@ -83,25 +82,25 @@ ridk inatall
 
 **補充**
 
-如果你發現黑色框框一直顯示大大的紅字Failed就把它關掉自己去網站下載它需要的東西
+如果你發現黑色框框一直顯示大大的紅字`Failed`就把它關掉自己去網站下載它需要的東西
 <a href="http://www.msys2.org/" target="_blank">按這裡<a>選擇中間x86_64的版本下載並安裝
 
-讓安裝程式自動啟動它並在那個黑色框框中輸入 pacman -Syu 按下Enter後等它跑完
+讓安裝程式自動啟動它並在那個黑色框框中輸入`pacman -Syu`按下Enter後等它跑完
 
-最後在開啟 Start Command Prompt with Ruby 輸入 ridk install 按下Enter就可以開始安裝ruby需要的組件了
+最後在開啟`Start Command Prompt with Ruby`輸入`ridk install`按下Enter就可以開始安裝ruby需要的組件了
 
 - 挑選並下載jekyll部落格模板
 
 這個jekyll模板分享網站<a href="https://jekyllthemes.io/" target="_blank">jekyllthemes<a>有各式各樣的模板提供下載，但注意**會有需要付費的模板**
 
 在你查看模板的途中會看到這兩個按鈕
-<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp10.png"></div>
+<div class="postimg"><img src="https://live.staticflickr.com/7846/46626378685_c7c52c368e.jpg" width="500" height="337" alt="gp10"></div>
 
 
 點下Get Forty可以進入到github頁面下載作者所分享的模板，Live demo則是可以進去看看模板大致上的呈現效果
 
-進入到github頁面後，照著圖中的做就可以把整個模板下載下來
-<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp11.png"></div>
+進入到github頁面後，照著圖中的做就可以把整個模板儲存成zip檔
+<div class="postimg"><img src="https://live.staticflickr.com/7894/47489004212_270c67b2e0.jpg" width="100%" height="100%"></div>
 
 假如你選好了中意的模板就先抓下來吧
 
@@ -115,7 +114,7 @@ ridk inatall
 
 但這次我們不必再去一堆雜七雜八的網站下載那些exe檔
 
-只要開啟 Start Command Prompt with Ruby 以下簡稱終端機，輸入
+只要開啟`Start Command Prompt with Ruby`以下簡稱終端機，輸入
 
 ```sh
 gem install jekyll
@@ -185,7 +184,7 @@ bundle exec jekyll server
 ```
 **注意這邊如過有被防毒軟體擋掉什麼檔案的話記得把它放到例外，不然你在本地測試會看不到你的網站**
 
-這時候再從瀏覽器輸入localhost:4000，通常情況下你就能看到剛剛挑選好的精美模板了，同時也代表你可以開始客製化屬於你自己的網頁跟發布貼文了。
+這時候再從瀏覽器輸入`localhost:4000`或是`127.0.0.1:4000`，正常情況下你就能看到剛剛挑選好的精美模板了，同時也代表你可以開始客製化屬於你自己的網頁跟發布貼文了。
 
 不過這都還是本地的測試階段，接下來我們還要讓你的部落格變成真正可以讓人瀏覽的網頁
 
@@ -197,28 +196,28 @@ bundle exec jekyll server
 
 按下桌面那有個~~不知道是什麼生物的~~白色剪影的紫色圈圈
 你會看到這個畫面
-<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp01.png"></div>
+<div class="postimg"><img src="https://live.staticflickr.com/7884/46626378905_32acaa1d2e.jpg"></div>
 
-照著圈起處選擇後，就會要你登入，如果你有先在網頁登入github，這裡應該會是這樣
-<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp02.png"></div>
+照著圈起處選擇後，就會要你登入，如果你有先在github網頁登入，這裡應該會是這樣
+<div class="postimg"><img src="https://live.staticflickr.com/7834/32599278877_d5c1da48be.jpg"></div>
 
 Email記得改成你註冊帳號的Email，輸入完就直接按下Continue吧！
 
 登入後它會要你選擇要複製到本地的專案，這邊當然是選擇你一開始創建好的 用戶名.github.io
-<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp03.png"></div>
+<div class="postimg"><img src="https://live.staticflickr.com/7878/46626378815_a296cf5588.jpg"></div>
 
 選擇完畢後就直接按下Clone
 
 接著會看到這個畫面
-<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp04.png"></div>
+<div class="postimg"><img src="https://live.staticflickr.com/7823/32599278767_aed4de77bd.jpg"></div>
 
 更改一下Local path選擇本地路徑( **建議也是在C槽路徑越短越好** )後再按下Clone進到下一步
 
 
 看到這個畫面就表示你的本地路徑已經可以跟雲端上的資源庫接通了
-<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp05.png"></div>
+<div class="postimg"><img src="https://live.staticflickr.com/7858/46626378755_072f471a29.jpg"></div>
 
-再解釋那些區塊是什麼作用之前
+再解釋那些123區塊分別是什麼作用之前
 我們先回到之前下載模板的資料夾根目錄，並把裡面的檔案全部複製起來貼到你剛剛設定的本地路徑
 
 之後在回到github desktop
@@ -237,9 +236,9 @@ Email記得改成你註冊帳號的Email，輸入完就直接按下Continue吧�
 首先開啟VScode選擇左上角檔案>開啟資料夾，選擇你在上一個步驟設定的本地路徑
 
 下圖的這幾個圈起來的部分，這是用我使用的模板做示範，所以僅供參考
-<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp06.png"></div>
+<div class="postimg"><img src="https://live.staticflickr.com/7874/47489004462_085cb70095.jpg"></div>
 
-posts資料夾基本上就是你貼文檔案要放的位置， **X-X-X-文章名稱** X的內容建議是跟著照年月日打，沒意外它是會顯示在你貼文上的日期，而最後的文章名稱記得 **千萬不要打中文** 不然99%機率會讓你的網站在測試階段就壞掉。
+posts資料夾基本上就是你貼文檔案要放的位置， **X-X-X-文章名稱** X的內容建議是跟著照年月日打，沒意外它是會顯示在你貼文上的日期，而最後的PO文檔案名稱記得 **千萬不要打中文** 不然99%機率會讓你的網站在測試階段就壞掉。
 
 然後每個模板中一定會有的_config.yml檔案很重要，它並不好解釋，因為在裡面可能會有讓你設定大到管理者、部落格名稱、小到首頁後綴網址、Logo圖片路徑等等，這也可能是我用的模板才有這些設定提供給你使用，但當你要使用一個新模板時一些初始設定一定是從這邊更改的。
 
