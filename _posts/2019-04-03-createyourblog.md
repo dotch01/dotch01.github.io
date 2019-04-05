@@ -30,8 +30,10 @@ github就像一個非常好用的雲端硬碟，除了儲存檔案之外他還�
 建立資源庫就像是建立一個雲端資料夾，你可以把一個專案甚至是一個還未完成的美術作品上傳到上面進行備份和版本控管
 
 這裡我們需要給部落格一個存在雲端上管理的空間，進入github官網登入後在右上角點選Your respository 
-
-<div class="postimg"><img src="{{site.baseurl}}/assets/images/gp07.png"></div>
+![walking]({{ site.baseurl }}/assets/images/gp07.png)
+<div class="postimg">
+![walking]({{ site.baseurl }}/assets/images/gp07.png) 
+</div>
 
 接著不要管其它的東西按下一個大大的綠色按鈕 New 
 
