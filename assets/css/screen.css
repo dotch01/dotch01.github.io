@@ -332,6 +332,7 @@ span.post-read-more a:hover {
 }
 
 .article-post {
+    word-break: break-all;
     font-family: Merriweather;
     font-size: 1.1rem;
     line-height: 1.84;
