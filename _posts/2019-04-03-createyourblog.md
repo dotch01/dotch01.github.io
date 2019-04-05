@@ -29,13 +29,11 @@ github就像一個非常好用的雲端硬碟，除了儲存檔案之外他還�
 
 建立資源庫就像是建立一個雲端資料夾，你可以把一個專案甚至是一個還未完成的美術作品上傳到上面進行備份和版本控管
 
-這裡我們需要給部落格一個存在雲端上管理的空間，進入github官網登入後在右上角點選Your respository 
-![walking]({{ site.baseurl }}/assets/images/gp07.png)
-<div class="postimg">
-![walking]({{ site.baseurl }}/assets/images/gp07.png) 
-</div>
+這裡我們需要給部落格一個存在雲端上管理的空間，進入github官網登入後在右上角點選`Your respository` 
 
-接著不要管其它的東西按下一個大大的綠色按鈕 New 
+<div class="postimg"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/gp07.png"></div>
+
+接著不要管其它的東西按下那個大大的綠色按鈕` New `
 
 到如圖的新增介面後記住 **Repository name一定要是 帳號名.github.io** 後面的設定基本上不需要更動直接按下 Create repository
 
