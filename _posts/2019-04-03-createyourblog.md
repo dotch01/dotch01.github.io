@@ -31,7 +31,7 @@ github就像一個非常好用的雲端硬碟，除了儲存檔案之外他還�
 
 這裡我們需要給部落格一個存在雲端上管理的空間，進入github官網登入後在右上角點選`Your respository` 
 
-<div class="postimg"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/gp07.png"></div>
+<div class="postimg"><img src="https://live.staticflickr.com/7851/32599278737_b0df596f43.jpg" width="290" height="405" alt="gp07"></a></div>
 
 接著不要管其它的東西按下那個大大的綠色按鈕` New `
 
