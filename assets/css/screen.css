@@ -5,7 +5,7 @@ License: https://www.wowthemes.net/freebies-license/
 */
 
 html {
-    background-color: #999;
+    background-color: black;
 }
 .mainheading {
     text-align: center;
@@ -958,13 +958,20 @@ body {
     text-shadow: 3px 3px 3px rgb(125, 185, 222);
 }
 
-
 .text-white {
     color: white;
 }
 
 .share-icon {
     color: white;
+}
+
+a {
+    font-size: 16px;
+}
+
+button {
+    outline: none;
 }
 
 span {

@@ -81,8 +81,8 @@ ga('send', 'pageview');
     </a>
     <!-- End Logo -->
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon navbar-dark bg-dark"></span>
+    <button style="outline: none;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon bg-dark" style="border-radius: 0.5rem;"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarMediumish">
@@ -96,7 +96,7 @@ ga('send', 'pageview');
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link text-white" href="{{ site.baseurl }}/index.html">文章</a>
+                <a class="nav-link text-white" href="{{ site.baseurl }}/index.html">首頁</a>
                 </li>
 
                 <li class="nav-item">
@@ -254,7 +254,7 @@ ga('send', 'pageview');
     var scrollH = $body.scrollTop(),
     winH = $win.height(),
     css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
-    if(scrollH > 1200) {
+    if(scrollH > 1800) {
     $button.css(css);
     $button.fadeIn("slow");
     } else {
