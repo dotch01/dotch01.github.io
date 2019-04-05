@@ -3,13 +3,17 @@ Template Name: Mediumish
 Copyright: Sal, WowThemes.net, https://www.wowthemes.net 
 License: https://www.wowthemes.net/freebies-license/ 
 */
+
+html {
+    background-color: #999;
+}
 .mainheading {
     text-align: center;
     padding: 1rem 0rem;
 }
 
 a {
-    color: #00ab6b;
+    color: rgb(58, 143, 153);
     transition: all 0.2s;
 }
 
@@ -36,7 +40,7 @@ pre {
 }
 
 .mediumnavigation {
-    background: rgba(255, 255, 255, .97);
+    background: rgba(71, 71, 71, 0.815);
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
     transition: top 0.2s ease-in-out;
 }
@@ -46,6 +50,7 @@ pre {
 }
 
 .site-content {
+    background-color: black;
     min-height: 60vh;
     padding-top: 1.5rem;
     margin-top: 57px;
@@ -61,7 +66,7 @@ section.recent-posts {
 }
 
 .section-title h2 {
-    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.678);
     margin-bottom: 25px;
     font-weight: 700;
     font-size: 1.4rem;
@@ -146,7 +151,7 @@ section.recent-posts {
 
 .listfeaturedtag h4.card-text,
 .listrecent h4.card-text {
-    color: rgba(0, 0, 0, .44);
+    color: rgba(255, 255, 255, 0.44);
     font-size: 0.95rem;
     line-height: 1.6;
     font-weight: 400;
@@ -178,6 +183,7 @@ section.recent-posts {
     height: 40px;
     margin-right: 13px;
     border-radius: 100%;
+    box-shadow:3px 3px 3px rgb(173, 173, 173);
 }
 
 .post-top-meta {
@@ -194,8 +200,8 @@ section.recent-posts {
 }
 
 .post-top-meta span {
-    font-size: 0.9rem;
-    color: rgba(0, 0, 0, .44);
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
     display: inline-block;
 }
 
@@ -225,7 +231,7 @@ span.author-meta {
 
 span.post-date,
 span.post-read {
-    color: rgba(0, 0, 0, .44);
+    color: rgba(209, 209, 209, 0.44);
 }
 
 span.post-read-more {
@@ -241,7 +247,7 @@ span.post-read-more a {
 
 span.post-name a,
 span.post-read-more a:hover {
-    color: rgba(0, 0, 0, .8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .dot:after {
@@ -315,15 +321,14 @@ span.post-read-more a:hover {
     padding-top: 15px;
     padding-bottom: 0px;
     font-size: 0.8rem;
-    color: rgba(0, 0, 0, .44);
+    color: rgba(255, 255, 255, 0.44);
     margin-top: 50px;
-    margin-bottom: 30px;
     position: relative;
-    background: #fff;
+    background: rgb(0, 0, 0);
 }
 
-.link-dark {
-    color: rgba(0, 0, 0, .8);
+.link-light {
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .article-post {
@@ -476,7 +481,7 @@ blockquote {
 }
 
 .graybg {
-    background-color: #fafafa;
+    background-color: #000000;
     padding: 40px 0 46px;
     position: relative;
 }
@@ -498,8 +503,8 @@ ul.tags li {
 }
 
 ul.tags li a {
-    background: rgba(0, 0, 0, .05);
-    color: rgba(0, 0, 0, .6);
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.6);
     border-radius: 3px;
     padding: 5px 10px;
 }
@@ -624,7 +629,7 @@ ul.tags li a:hover {
 
 .authorpage .author-description {
     font-size: 1rem;
-    color: rgba(0, 0, 0, .6);
+    color: rgb(255, 255, 255);
 }
 
 .post-top-meta.authorpage .btn.follow {
@@ -904,7 +909,7 @@ body {
     -webkit-user-select: none;
 }
 .postimg img{
-    box-shadow:3px 3px 12px gray;
+    box-shadow:3px 3px 12px rgb(192, 192, 192);
     transition: all 0.5s ease 0s;
     display:block;
     margin: 24px auto;
@@ -916,4 +921,75 @@ body {
     -o-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+}
+
+.bg-costom {
+    background-color: black;
+}
+
+.cos_squ {
+    transition: all 0.5s ease 0s;
+}
+
+.cos_squ:hover{
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.cos-tag {
+    text-shadow:3px 3px 3px rgb(125, 185, 222);
+    transition: all 0.5s ease 0s;
+}
+
+.cos-tag:hover{
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.cos-bar {
+    background-color: #222;
+    text-shadow: 3px 3px 3px rgb(125, 185, 222);
+}
+
+
+.text-white {
+    color: white;
+}
+
+.share-icon {
+    color: white;
+}
+
+span {
+    color: #ddd;
+}
+
+h1 {
+    color: #ddd;
+}
+
+h4 {
+    color: #ddd;
+}
+
+ul {
+    color: #ddd;
+}
+
+p {
+    color: #ddd;
+}
+
+h5 {
+    color: #ddd;
+}
+
+strong {
+    color: white;
 }

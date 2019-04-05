@@ -71,7 +71,7 @@ ga('send', 'pageview');
 
 <!-- Begin Menu Navigation
 ================================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top mediumnavigation nav-down cos-bar">
 
     <div class="container pr-0" colo>
 
@@ -96,11 +96,11 @@ ga('send', 'pageview');
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">文章</a>
+                <a class="nav-link text-white" href="{{ site.baseurl }}/index.html">文章</a>
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/about">關於我</a>
+                <a class="nav-link text-white" href="{{ site.baseurl }}/about">關於我</a>
                 </li>
 
                 <!-- <li class="nav-item">
@@ -182,11 +182,11 @@ ga('send', 'pageview');
             {% assign categories_list = site.categories %}
             {% if categories_list.first[0] == null %}
                 {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+                    <a class="mt-1 mb-1 cos-tag" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
                 {% endfor %}
             {% else %}
                 {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
+                    <a class="mt-1 mb-1 cos-tag" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
                 {% endfor %}
             {% endif %}
             {% assign categories_list = nil %}

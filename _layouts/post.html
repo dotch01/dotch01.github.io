@@ -32,7 +32,7 @@ post_class: post-template
                         {% endif %}
                     </div>
                     <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+                        <a target="_blank" class="link-light" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
                         <span class="author-description">{{ author.description }}</span>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ post_class: post-template
             <!-- Rating -->
             {% if page.rating %}
             <div class="rating mb-4 d-flex align-items-center">
-                <strong class="mr-1">評分:</strong> {% include star_rating.html %}
+                <strong class="mr-1">評分：　</strong> {% include star_rating.html %}
             </div>
             {% endif %}
 

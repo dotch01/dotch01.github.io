@@ -8,10 +8,10 @@ comments: true
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/Resume.png" alt="履歷" /></p>
+<p class="mb-5" style="display:block;margin: 24px auto;"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/Resume.png" alt="履歷" /></p>
 <h4>瀏覽部落格</h4>
 
-<p>有興趣瀏覽我的部落格都有些什麼，請點擊<a href="{{ site.baseurl }}">這裡</a>。</p>
+<p>有興趣瀏覽我的部落格都有些什麼，請點擊<a href="{{ site.baseurl }}/index.html">這裡</a>。</p>
 
 </div>
 

@@ -2,7 +2,7 @@
 {% assign author = site.authors[post.author] %}
 
 <div class="col-lg-4 col-md-6 mb-30px card-group">
-    <div class="card h-100">
+    <div class="card h-100 cos_squ" style="border-radius: 1.25rem; background-color: rgb(15, 37, 64);">
         <div class="maxthumb">
             <a href="{{ post.url | absolute_url }}">
                 {% if post.image %}
@@ -16,9 +16,9 @@
                 {% endif %}
             </a>
         </div>
-        <div class="card-body">
+        <div class="card-body" style="background-color: rgb(15, 37, 64)">
             <h2 class="card-title">
-                <a class="text-dark" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                <a class="text-white" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                 {% if post.rating %}
                 <div class="mb-2 mt-2 font-weight-normal">
                 {% include star_rating_postbox.html %}
@@ -27,7 +27,7 @@
             </h2>
             <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
         </div>
-        <div class="card-footer bg-white">
+        <div class="card-footer bg-costom">
             <div class="wrapfooter">
                 {% if post.author %}
                 <span class="meta-footer-thumb">
