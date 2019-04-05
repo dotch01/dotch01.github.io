@@ -72,7 +72,8 @@ Ruby在windows上的安裝方法似乎跟Mac、Linux不一樣，可以使用Ruby
 
 然後正常情況下你就會看到一個~~疑似木馬程式~~黑色框框，大概是Ruby自己寫的一個終端機，別擔心，它只是要安裝一些額外的東西就按下Enter給它安裝就對了
 
-就算沒看到也沒關係，找到你的C槽路徑 Users\"你的使用者名稱"\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Ruby 2.6.1-1-x64 下會有一個 Start Command Prompt with Ruby 這個東東會很常用到建議你把它釘選在工作列，在找不到就按下Ctrl+F貼上名字用搜尋大法直接暴力搜就好。
+就算沒看到也沒關係，找到你的C槽路徑 Users\"你的使用者名稱"\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Ruby 2.6.1-1-x64
+下會有一個 Start Command Prompt with Ruby 這個東東會很常用到建議你把它釘選在工作列，在找不到就按下Ctrl+F貼上名字用搜尋大法直接暴力搜就好。
 
 開啟之後直接輸入
 ```sh
