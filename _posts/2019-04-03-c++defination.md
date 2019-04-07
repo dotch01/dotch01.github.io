@@ -2,7 +2,7 @@
 layout: post
 title:  "C++的定義"
 author: dot
-categories: [ c++, programming, note ]
+categories: [ cpp, programming ]
 image: assets/images/16.jpg
 ---
 

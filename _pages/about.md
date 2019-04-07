@@ -17,7 +17,7 @@ comments: true
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5x5lXuqSFBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<h4>瀏覽部落格</h4>
+<h4>我的部落格</h4>
 
 <p>有興趣瀏覽我的部落格都有些什麼，請點擊<a href="{{ site.baseurl }}/index.html">這裡</a>。</p>
 
@@ -30,7 +30,7 @@ comments: true
 
 <p>電話：0911920539 or</p>
 
-<a target="_blank" href="mailto:vicky012133@gmail.com" class="btn btn-warning">電子郵件</a>
+<a target="_blank" href="mailto:vicky012133@gmail.com" class="btn btn-primary">電子郵件</a>
 
 </div>
 </div>
