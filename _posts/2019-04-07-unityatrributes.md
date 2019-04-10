@@ -31,7 +31,7 @@ hidden: false
 
 
 
-<pre><code>
+```csharp
 [DisallowMultipleComponent] //限制不能再同個物件上重複添加此腳本
 [AddComponentMenu("職業基本數值/數值設定/script")] //把這個腳本加到Unity的選項Component並創建一個分類叫做"職業基本數值">"數值設定"裡的script選下去後就可以把這個腳本加到物件裡
 [RequireComponent(typeof(myscript),typeof(BoxCollider2D))] //當插入此腳本的時候會自動檢測此物件上有無myscript腳本和Collider2D元件，若無會自動新增，並且無法刪除他們
@@ -94,7 +94,7 @@ public class BeautifulScript : MonoBehaviour {
 	}
 
 }
-</code></pre>
+```
 
 
 

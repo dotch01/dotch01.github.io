@@ -25,7 +25,7 @@ hidden: false
 
 以下寫了個簡單的範例程式來做練習
 
-```c
+```cs
 #include <iostream>
 
 struct Vector2 //定義一個可使用的結構

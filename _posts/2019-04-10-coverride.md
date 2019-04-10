@@ -28,7 +28,7 @@ override 則寫在**複寫的函式**的大括號前、小括號後，表示覆�
 
 以下寫了個簡單的範例程式來做練習
 
-```c
+```cs
 #include <iostream>
 #include <string>
 

@@ -14,7 +14,7 @@ image: assets/images/16.jpg
 
 
 
-```c
+```cs
 int variable = 8; //int 占用4byte memory = 32bits 1byte = 8 bits
 unsigned int var = 8; // unsigned 表示可以超出int宣告數地的上限 2百萬
 

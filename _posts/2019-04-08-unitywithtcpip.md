@@ -91,7 +91,7 @@ Clinet的直譯叫做客戶端，顧名思義就是**客戶用**，用遊戲來�
 
 + Client端
 
-```C#
+```csharp
 
 using System;
 using System.IO;
@@ -437,7 +437,7 @@ public class tcpClient : MonoBehaviour
 
 + Server端
 
-```C#
+```csharp
 
 using System;
 using System.IO;
@@ -711,7 +711,7 @@ public class ServerClient //初始化連線進來的Client
 
 + 接收訊息後該做什麼回應的DataBase
 
-```C#
+```csharp
 
 using UnityEngine;
 
@@ -776,7 +776,7 @@ public class loadMessage {
 
 + 使用DES寫個訊息加解密class
 
-```C#
+```csharp
 
 using System;
 using System.IO;

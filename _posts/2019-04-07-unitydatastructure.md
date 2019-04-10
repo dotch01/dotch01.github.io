@@ -30,7 +30,7 @@ hidden: false
 
 
 
-```C#
+```csharp
 using UnityEngine;
 
 [DisallowMultipleComponent]
