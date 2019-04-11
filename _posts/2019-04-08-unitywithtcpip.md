@@ -866,10 +866,10 @@ public class encryptString
 
 Server的流程大概是
 
-<div class="postimg"><img src="https://live.staticflickr.com/7829/47562665311_61fda94c9b_o.png" width="1083" height="309" alt="server"></div>
+<div class="postimg"><img src="https://live.staticflickr.com/7829/47562665311_61fda94c9b_o.png" alt="server"></div>
 
 Client的流程圖大概是
 
-<div class="postimg"><img src="https://live.staticflickr.com/7818/46838831594_9a6829ddc0_o.png" width="1180" height="253" alt="client"></div>
+<div class="postimg"><img src="https://live.staticflickr.com/7818/46838831594_9a6829ddc0_o.png" alt="client"></div>
 
 基本上是由電腦當Server端，Client端可輸出到WIN電腦和Android系統，記得將tcpClient跟tcpServer掛到Unity場景的物件上就可以使用囉

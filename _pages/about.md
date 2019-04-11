@@ -19,14 +19,14 @@ comments: true
 
 <h4 style="text-align:center; margin-top:100px;">我的部落格</h4>
 
-<p style="text-align:center;">有興趣瀏覽我的部落格都有些什麼，請點擊<a href="{{ site.baseurl }}/index.html">這裡</a>。</p>
+<p style="text-align:center;">如果你有興趣瀏覽我的部落格都有些什麼，請點擊<a href="{{ site.baseurl }}/index.html">這裡</a>。</p>
 
 </div>
 
 <div class="col-md-4">
 
 <div style="text-align:center;" class="sticky-top sticky-top-80">
-<h5>聯絡我</h5>
+<h5>聯絡方式</h5>
 
 <p>電話：<a href="tel:0911920539">0911920539</a> 國際電話：<a href="tel:+88611920539">+88611920539</a></p>
 
