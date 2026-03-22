@@ -1,0 +1,57 @@
+<!-- Sidebar -->
+<div class="sidebar-widget sticky-top" style="top: 80px;">
+
+    <!-- Search Widget -->
+    <div class="sidebar-card mb-4">
+        <h5 class="sidebar-title">搜尋文章</h5>
+        <form onsubmit="return lunr_search(document.getElementById('sidebar-search').value);">
+            <div class="input-group input-group-sm">
+                <input type="search" class="form-control" id="sidebar-search" placeholder="輸入關鍵字..." style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-info btn-sm" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Categories Widget -->
+    <div class="sidebar-card mb-4">
+        <h5 class="sidebar-title">文章分類</h5>
+        <ul class="list-unstyled mb-0">
+            {% for category in site.categories %}
+            <li class="mb-1">
+                <a class="sidebar-link" href="{{ site.baseurl }}/categories#{{ category[0] | url_escape | replace: ' ', '-' }}">
+                    {{ category[0] }}
+                    <span class="badge badge-info float-right">{{ category[1].size }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Tags Widget -->
+    <div class="sidebar-card mb-4">
+        <h5 class="sidebar-title">標籤</h5>
+        <div class="sidebar-tags">
+            {% for tag in site.tags %}
+            <a class="sidebar-tag" href="{{ site.baseurl }}/tags#{{ tag[0] | url_escape | replace: ' ', '-' }}">
+                #{{ tag[0] }} <small>({{ tag[1].size }})</small>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Recent Posts Widget -->
+    <div class="sidebar-card mb-4">
+        <h5 class="sidebar-title">最新文章</h5>
+        <ul class="list-unstyled mb-0">
+            {% for post in site.posts limit:5 %}
+            <li class="mb-2 sidebar-recent-post">
+                <a class="sidebar-link" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                <small class="d-block" style="color: #888;">{{ post.date | date_to_string }}</small>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</div>

@@ -1,21 +1,12 @@
-<script src="{{site.baseurl}}/assets/js/lunr.js"></script>
+﻿<script>
+    window.lunrSearchDataUrl = "{{ site.baseurl }}/assets/search.json";
+</script>
 
-
-<style>
-    .lunrsearchresult .title {color: #d9230f;}
-    .lunrsearchresult .url {color: silver;}
-    .lunrsearchresult a {display: block; color: #777;}
-    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
-    .lunrsearchresult a:hover .title {text-decoration: underline;}
-</style>
-
-
-<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-    <!-- <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/> -->
-</form>
-
-<div id="lunrsearchresults">
-    <ul></ul>
-</div>
-
-<script src="{{site.baseurl}}/assets/js/lunrsearchengine.js"></script>
+<li class="nav-item">
+    <form class="form-inline my-2 my-lg-0" onsubmit="return lunr_search(document.getElementById('lunrsearchinput').value);">
+        <input class="form-control form-control-sm mr-sm-2 search-input" type="search" id="lunrsearchinput" placeholder="Search..." aria-label="Search" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff;">
+    </form>
+</li>
+<script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
+<script src="{{ site.baseurl }}/assets/js/lunrsearchengine.js"></script>
+<div id="lunrsearchresults"></div>

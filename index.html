@@ -28,34 +28,39 @@ title: Dot paradise
 
 {% endif %}
 
-<!-- Posts Index
+<!-- Main Content + Sidebar
 ================================================== -->
-<section class="recent-posts">
+<div class="row">
 
-    <div class="section-title">
+    <!-- Posts Column -->
+    <div class="col-lg-8 col-md-12">
 
-        <h2><span>所有文章</span></h2>
+        <section class="recent-posts">
+            <div class="section-title">
+                <h2><span>所有文章</span></h2>
+            </div>
+            <div class="row listrecent">
+                {% for post in paginator.posts %}
+                {% include postbox.html %}
+                {% endfor %}
+            </div>
+        </section>
+
+        <!-- Pagination
+        ================================================== -->
+        <div class="bottompagination">
+        <div class="pointerup"><i class="fa fa-caret-up"></i></div>
+        <span class="navigation" role="navigation">
+            {% include pagination.html %}
+        </span>
+        </div>
 
     </div>
 
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
-        {% endfor %}
-
+    <!-- Sidebar Column -->
+    <div class="col-lg-4 col-md-12">
+        {% include sidebar.html %}
     </div>
 
-</section>
-
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
 </div>
 

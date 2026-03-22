@@ -1,25 +1,74 @@
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 上一頁</a>
-  {% else %}
-    <span>&laquo; 下一頁</span>
-  {% endif %}
+﻿{% if paginator.total_pages > 1 %}
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
 
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <span class="ml-1 mr-1">{{ page }}</span>
-    {% elsif page == 1 %}
-      <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-    {% else %}
-      <a class="ml-1 mr-1" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
+        {% if paginator.previous_page %}
+        <li class="page-item">
+            <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous">上一頁</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <span class="page-link">上一頁</span>
+        </li>
+        {% endif %}
 
-  {% if paginator.next_page %}
-    <a class="ml-1 mr-1" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一頁 &raquo;</a>
-  {% else %}
-    <span>下一頁 &raquo;</span>
-  {% endif %}
+        {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+            <li class="page-item active">
+                <span class="page-link">{{ page }}</span>
+            </li>
+            {% elsif page == 1 %}
+            <li class="page-item">
+                <a class="page-link" href="{{ site.baseurl }}/">{{ page }}</a>
+            </li>
+            {% else %}
+            <li class="page-item">
+                <a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+            </li>
+            {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <li class="page-item">
+            <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next">下一頁</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <span class="page-link">下一頁</span>
+        </li>
+        {% endif %}
+
+    </ul>
+</nav>
+
+{% if paginator.total_pages > 2 %}
+<div class="page-jump-form text-center mt-2">
+    <form class="form-inline justify-content-center" onsubmit="return jumpToPage();">
+        <label class="mr-2" style="color: #ccc;">跳至第</label>
+        <input type="number" class="form-control form-control-sm" id="pageJumpInput" min="1" max="{{ paginator.total_pages }}" style="width: 65px; background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">
+        <label class="mx-1" style="color: #ccc;">頁</label>
+        <button type="submit" class="btn btn-sm btn-outline-info ml-1">Go</button>
+        <small class="ml-2" style="color: #888;">共 {{ paginator.total_pages }} 頁</small>
+    </form>
 </div>
+<script>
+function jumpToPage() {
+    var input = document.getElementById('pageJumpInput');
+    var num = parseInt(input.value);
+    var total = {{ paginator.total_pages }};
+    if (isNaN(num) || num < 1 || num > total) {
+        input.classList.add('is-invalid');
+        return false;
+    }
+    var baseUrl = '{{ site.baseurl }}'.replace(/\/+$/, '');
+    if (num === 1) {
+        window.location.href = baseUrl + '/';
+    } else {
+        window.location.href = baseUrl + '/page' + num + '/';
+    }
+    return false;
+}
+</script>
+{% endif %}
+
 {% endif %}
