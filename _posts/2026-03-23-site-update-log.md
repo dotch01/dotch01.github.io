@@ -2,6 +2,8 @@
 layout: post
 title:  "網站大更新：側欄功能、搜尋修復與CI自動化測試"
 author: dot
+date: 2026-03-22 12:00:00 +0800
+published: true
 categories: [ github, git page ]
 tags: [ github, jekyll, CI ]
 image: assets/images/16.jpg
@@ -22,7 +24,7 @@ hidden: false
 原本的搜尋功能其實是**完全壞掉的**——搜尋索引裡面存的是原主題的 demo 文章資料，指向 `wowthemesnet.github.io`，根本不是我的文章。
 
 **修復方式：**
-- 將 `lunrsearchengine.js` 改為使用 Jekyll 的 Liquid 模板引擎，在**建置時（build time）**自動從 `site.posts` 生成搜尋索引
+- 將搜尋資料改為由 `assets/search.json` 在**建置時（build time）**自動從 `site.posts` 生成搜尋索引，`lunrsearchengine.js` 本身保持為純 JavaScript
 - 加入 `escapeHtml()` 函數防止 XSS 注入（原本搜尋結果直接用 `innerHTML` 插入未過濾的內容）
 - 搜尋結果 Modal 配色改為符合暗色主題
 
@@ -30,10 +32,8 @@ hidden: false
 // 原本：硬編碼的 demo 資料
 var documents = [{ "id": 0, "url": "https://wowthemesnet...", ... }];
 
-// 修改後：Liquid 動態生成
-var documents = [
-  { "id": 0, "url": "實際文章URL", "title": "實際標題", ... }
-];
+// 修改後：建置時產生 JSON 索引，由前端載入
+fetch('/assets/search.json').then(...)
 ```
 
 ### 2. 新增右側欄（Sidebar）

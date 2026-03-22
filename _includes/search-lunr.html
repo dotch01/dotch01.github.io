@@ -1,10 +1,10 @@
 ﻿<script>
-    window.lunrSearchDataUrl = "{{ site.baseurl }}/assets/search.json";
+    window.lunrSearchDataUrl = "{{ '/assets/search.json' | relative_url }}";
 </script>
 
 <li class="nav-item">
     <form class="form-inline my-2 my-lg-0" onsubmit="return lunr_search(document.getElementById('lunrsearchinput').value);">
-        <input class="form-control form-control-sm mr-sm-2 search-input" type="search" id="lunrsearchinput" placeholder="Search..." aria-label="Search" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff;">
+        <input class="form-control form-control-sm mr-sm-2 search-input" type="search" id="lunrsearchinput" placeholder="搜尋文章..." aria-label="Search" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff;">
     </form>
 </li>
 <script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
