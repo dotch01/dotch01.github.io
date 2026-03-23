@@ -151,6 +151,54 @@
    Responsive
    ==================================== */
 
+.article-post {
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+.article-post ol,
+.article-post ul {
+    padding-left: 1.6rem;
+}
+
+.article-post li {
+    margin-bottom: 0.45rem;
+}
+
+.article-post table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    color: #ddd;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.article-post thead {
+    background: rgba(58, 143, 153, 0.12);
+}
+
+.article-post th,
+.article-post td {
+    padding: 0.7rem 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    vertical-align: top;
+    white-space: normal;
+    word-break: keep-all;
+}
+
+.article-post th {
+    color: #fff;
+    font-weight: 700;
+}
+
+.article-post td {
+    color: #ddd;
+}
+
 @media (max-width: 991px) {
     .sidebar-widget {
         position: static !important;
