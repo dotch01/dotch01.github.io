@@ -9,7 +9,7 @@ tags: [ github, jekyll, CI ]
 image: assets/images/16.jpg
 beforetoc: "紀錄這次對個人頁面進行的大規模功能改進，包含右側欄快捷功能、搜尋引擎修復、分頁跳轉、以及GitHub Actions自動化測試的導入過程。"
 toc: true
-featured: true
+featured: false
 hidden: false
 ---
 
