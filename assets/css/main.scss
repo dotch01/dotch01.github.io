@@ -1,3 +1,6 @@
+---
+---
+
 /* We need to add display:inline in order to align the '>>' of the 'read more' link */
 .post-excerpt p {
 	display:inline;
@@ -130,6 +133,7 @@
 }
 
 .page-jump-form input[type=number] {
+    appearance: textfield;
     -moz-appearance: textfield;
     text-align: center;
 }
