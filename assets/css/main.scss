@@ -1,8 +1,3 @@
----
-# Add a comment to make this file sass-y.
-# Change this file for any custom CSS.
----
-
 /* We need to add display:inline in order to align the '>>' of the 'read more' link */
 .post-excerpt p {
 	display:inline;
@@ -154,15 +149,36 @@
 .article-post {
     word-break: normal;
     overflow-wrap: break-word;
+    color: #ddd;
+}
+
+.article-post h1,
+.article-post h2,
+.article-post h3,
+.article-post h4,
+.article-post h5,
+.article-post h6 {
+    color: #ddd;
 }
 
 .article-post ol,
 .article-post ul {
     padding-left: 1.6rem;
+    color: #ddd;
 }
 
 .article-post li {
     margin-bottom: 0.45rem;
+    color: #ddd;
+}
+
+.article-post p,
+.article-post blockquote {
+    color: #ddd;
+}
+
+.article-post strong {
+    color: #fff;
 }
 
 .article-post table {
